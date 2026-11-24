@@ -1,0 +1,404 @@
+{
+  "version": 1,
+  "lessons": [
+    {
+      "id": "eco-001",
+      "category": "3R",
+      "title": "Mengurangi sampah dari keputusan membeli",
+      "body": "Pilihan kemasan, porsi, dan ketahanan barang menentukan jumlah sampah bahkan sebelum barang masuk rumah. Reduce berarti mencegah timbulan, bukan memindahkannya ke tempat lain.",
+      "action": "Bandingkan dua produk berdasarkan jumlah kemasan dan kebutuhan sebenarnya."
+    },
+    {
+      "id": "eco-002",
+      "category": "3R",
+      "title": "Mengapa membawa botol isi ulang efektif?",
+      "body": "Menggunakan botol berulang dapat mengurangi kebutuhan wadah sekali pakai jika dirawat dan digunakan cukup lama. Dampak keseluruhan juga dipengaruhi proses pembuatan dan pencuciannya.",
+      "action": "Gunakan botol bersih yang aman untuk pangan dan isi ulang saat tersedia."
+    },
+    {
+      "id": "eco-003",
+      "category": "3R",
+      "title": "Reuse bukan recycle",
+      "body": "Reuse memakai kembali barang tanpa mengubahnya menjadi material baru. Recycle memproses ulang bahan, yang tetap membutuhkan energi, pemilahan, dan pasar.",
+      "action": "Perbaiki atau gunakan kembali barang yang masih layak sebelum mengirimnya untuk didaur ulang."
+    },
+    {
+      "id": "eco-004",
+      "category": "3R",
+      "title": "Membedakan bahan dapat didaur ulang",
+      "body": "Simbol resin pada plastik tidak memastikan fasilitas setempat mau atau mampu mendaur ulangnya. Kebersihan, jenis polimer, dan ketersediaan pengepul ikut menentukan.",
+      "action": "Cek daftar material yang diterima bank sampah lokal."
+    },
+    {
+      "id": "eco-005",
+      "category": "3R",
+      "title": "Sampah tercampur menyebabkan kontaminasi",
+      "body": "Sisa makanan dapat mengotori kertas dan kemasan sehingga sulit dipulihkan. Pemilahan sejak sumber menjaga mutu material dan mengurangi pekerjaan sortir.",
+      "action": "Pisahkan organik basah dari material yang hendak didaur ulang."
+    },
+    {
+      "id": "eco-006",
+      "category": "3R",
+      "title": "Bank sampah dan alur material",
+      "body": "Bank sampah mengumpulkan material bernilai, mencatat setoran, dan menyalurkannya kepada mitra. Program bisa terhenti bila penjemputan dan pasar pembeli tidak stabil.",
+      "action": "Kenali jadwal, harga, dan jenis material yang diterima di daerahmu."
+    },
+    {
+      "id": "eco-007",
+      "category": "3R",
+      "title": "Apa itu residu?",
+      "body": "Residu adalah bagian sampah yang belum dapat diolah atau dimanfaatkan melalui opsi setempat. Kategorinya bisa berubah mengikuti teknologi dan kapasitas layanan.",
+      "action": "Kurangi sumber residu dan catat apa yang paling sering tidak bisa dipilah."
+    },
+    {
+      "id": "eco-008",
+      "category": "3R",
+      "title": "Sampah yang mengandung B3 rumah tangga",
+      "body": "Baterai, lampu tertentu, dan produk kimia tertentu membutuhkan pemisahan karena potensi bahan berbahaya. Penanganannya harus mengikuti fasilitas dan aturan setempat.",
+      "action": "Jangan mencampur baterai atau kemasan bahan kimia dengan kompos dan daur ulang biasa."
+    },
+    {
+      "id": "eco-009",
+      "category": "3R",
+      "title": "Mengurangi sampah makanan",
+      "body": "Pencegahan sisa pangan umumnya didahulukan sebelum mengomposkan limbah yang telanjur terbentuk. Penyimpanan dan porsi berpengaruh pada banyaknya sisa.",
+      "action": "Rencanakan belanja dan olah bahan pangan sebelum kedaluwarsa."
+    },
+    {
+      "id": "eco-010",
+      "category": "3R",
+      "title": "Kemasan guna ulang dan kebersihan",
+      "body": "Barang guna ulang dapat bermanfaat, tetapi perlu dibersihkan dan dirawat untuk menghindari kontaminasi. Tidak semua wadah aman untuk semua jenis makanan dan suhu.",
+      "action": "Pilih wadah sesuai petunjuk bahan dan cuci setelah dipakai."
+    },
+    {
+      "id": "eco-011",
+      "category": "3R",
+      "title": "Mitos membakar sampah menghilangkan masalah",
+      "body": "Pembakaran terbuka mengubah sampah menjadi asap, partikulat, gas, dan abu; pencemaran tidak sekadar hilang. Dampaknya bergantung pada bahan dan kondisi pembakaran.",
+      "action": "Jangan bakar sampah; gunakan pemilahan dan layanan pengelolaan setempat."
+    },
+    {
+      "id": "eco-012",
+      "category": "3R",
+      "title": "Memulai audit sampah sederhana",
+      "body": "Mencatat jenis dan massa sampah selama beberapa hari membantu menentukan masalah dominan sebelum membuat program. Pengukuran harus konsisten pada periode dan rumah yang sama.",
+      "action": "Timbang residu dan material terpilah selama satu minggu dengan prosedur yang aman."
+    },
+    {
+      "id": "eco-013",
+      "category": "Air",
+      "title": "Air terlihat jernih belum tentu aman",
+      "body": "Kejernihan hanya menggambarkan sebagian karakteristik fisik. Kontaminasi mikrobiologis atau kimia bisa tidak terlihat tanpa pemeriksaan yang sesuai.",
+      "action": "Jangan mengandalkan warna atau bau saja untuk menilai keamanan air minum."
+    },
+    {
+      "id": "eco-014",
+      "category": "Air",
+      "title": "Perbedaan air baku dan air minum",
+      "body": "Air baku adalah sumber sebelum pengolahan, sedangkan air minum harus memenuhi persyaratan keamanan untuk konsumsi. Kualitas sumber menentukan proses yang dibutuhkan.",
+      "action": "Cari sumber informasi mutu air dari penyedia atau laboratorium resmi."
+    },
+    {
+      "id": "eco-015",
+      "category": "Air",
+      "title": "Mengapa drainase tersumbat berbahaya?",
+      "body": "Sampah yang menghalangi saluran dapat menghambat aliran air dan memperburuk genangan. Menilai penyebab genangan perlu mempertimbangkan juga hujan dan kapasitas drainase.",
+      "action": "Laporkan saluran tersumbat tanpa masuk ke air yang berisiko tercemar."
+    },
+    {
+      "id": "eco-016",
+      "category": "Air",
+      "title": "Fungsi sedimentasi",
+      "body": "Sedimentasi memisahkan partikel yang dapat mengendap dengan bantuan gravitasi. Proses ini tidak menghilangkan seluruh zat terlarut dan patogen.",
+      "action": "Bedakan partikel mengendap dari pencemar yang memerlukan pengolahan lain."
+    },
+    {
+      "id": "eco-017",
+      "category": "Air",
+      "title": "Filtrasi berbeda dari disinfeksi",
+      "body": "Filtrasi bertujuan mengurangi partikel tertentu; disinfeksi menginaktivasi mikroorganisme. Satu proses saja belum tentu cukup bagi semua kualitas air baku.",
+      "action": "Tanyakan apakah air sudah melewati langkah keamanan yang sesuai sebelum diminum."
+    },
+    {
+      "id": "eco-018",
+      "category": "Air",
+      "title": "Pencemaran sumur dan sanitasi",
+      "body": "Kondisi tangki septik, jenis tanah, aliran air tanah, dan konstruksi sumur memengaruhi potensi masuknya pencemar. Jarak saja tidak cukup memastikan air aman.",
+      "action": "Periksa kondisi perlindungan sumur dan lakukan uji bila ada dugaan pencemaran."
+    },
+    {
+      "id": "eco-019",
+      "category": "Air",
+      "title": "Air payau perlu pendekatan khusus",
+      "body": "Garam terlarut dalam air payau tidak otomatis tersisih oleh saringan pasir biasa. Pilihan proses bergantung pada kadar garam, biaya, dan kebutuhan mutu air.",
+      "action": "Bedakan kebutuhan pengurangan kekeruhan dari kebutuhan desalinasi."
+    },
+    {
+      "id": "eco-020",
+      "category": "Air",
+      "title": "Memantau mutu air secara benar",
+      "body": "pH, kekeruhan, dan konduktivitas memberi informasi yang berbeda. Sensor elektronik memerlukan kalibrasi dan tidak membuktikan keamanan mikrobiologi dengan sendirinya.",
+      "action": "Gunakan beberapa indikator dan verifikasi hasil sensor saat mengambil keputusan penting."
+    },
+    {
+      "id": "eco-021",
+      "category": "Udara",
+      "title": "Partikulat dari pembakaran terbuka",
+      "body": "Partikulat halus dapat terbawa udara dan terhirup. Risiko kesehatan dipengaruhi konsentrasi, durasi pajanan, dan kerentanan individu.",
+      "action": "Hindari area berasap dan cegah pembakaran sampah di sumbernya."
+    },
+    {
+      "id": "eco-022",
+      "category": "Udara",
+      "title": "Emisi dan udara ambien berbeda",
+      "body": "Emisi adalah pelepasan pencemar dari sumber; udara ambien menggambarkan kondisi di lingkungan penerima. Data keduanya tidak selalu menjawab pertanyaan yang sama.",
+      "action": "Tentukan apakah tujuanmu memeriksa cerobong atau paparan warga."
+    },
+    {
+      "id": "eco-023",
+      "category": "Udara",
+      "title": "Mengapa bau bukan ukuran toksisitas?",
+      "body": "Bahan dapat tercium pada konsentrasi tertentu, tetapi intensitas bau tidak otomatis menunjukkan besarnya efek kesehatan. Sebagian pencemar juga tidak berbau.",
+      "action": "Bila ada keluhan, cari pengukuran dan informasi sumber, bukan hanya persepsi bau."
+    },
+    {
+      "id": "eco-024",
+      "category": "Udara",
+      "title": "Siklon dan bag filter",
+      "body": "Siklon memisahkan banyak partikel dengan gaya sentrifugal; bag filter menyaring melalui media kain. Keefektifan bergantung ukuran partikel dan operasi alat.",
+      "action": "Pilih teknologi berdasarkan karakteristik polutan, bukan sekadar nama alat."
+    },
+    {
+      "id": "eco-025",
+      "category": "Udara",
+      "title": "Scrubber memiliki residu",
+      "body": "Alat scrubber dapat memindahkan sebagian polutan dari gas ke cairan pencuci. Cairan dan lumpur hasilnya perlu pengelolaan agar tidak menyebabkan pencemaran sekunder.",
+      "action": "Nilai aliran limbah cair saat mengevaluasi kinerja pengendalian udara."
+    },
+    {
+      "id": "eco-026",
+      "category": "Udara",
+      "title": "CEMS bukan PEMS",
+      "body": "CEMS melakukan pengukuran emisi kontinu dengan instrumen, sedangkan PEMS memperkirakan emisi menggunakan model dan data proses. Keduanya memerlukan kendali mutu sesuai konteks.",
+      "action": "Tanyakan apakah data yang ditampilkan merupakan hasil ukur atau prediksi."
+    },
+    {
+      "id": "eco-027",
+      "category": "Udara",
+      "title": "Mengurangi paparan udara di rumah",
+      "body": "Ventilasi, pengurangan sumber asap, dan kebersihan lingkungan perlu disesuaikan dengan kondisi luar ruangan. Tidak ada satu tindakan yang cocok untuk semua sumber pencemar.",
+      "action": "Utamakan penghilangan sumber asap dan ikuti informasi kualitas udara lokal."
+    },
+    {
+      "id": "eco-028",
+      "category": "Kesehatan",
+      "title": "Bahaya belum tentu sama dengan pajanan",
+      "body": "Sebuah zat dapat berbahaya, tetapi risiko konkret juga bergantung pada apakah manusia kontak dan menerima dosis. Kontak pun tidak otomatis berarti penyakit muncul.",
+      "action": "Petakan sumber, media, jalur masuk, dan orang yang berpotensi terpajan."
+    },
+    {
+      "id": "eco-029",
+      "category": "Kesehatan",
+      "title": "Lima elemen jalur pajanan",
+      "body": "Analisis pajanan menelusuri sumber, media pembawa, titik kontak, rute masuk, serta populasi terpajan. Jalur yang belum lengkap membutuhkan bukti tambahan.",
+      "action": "Coba petakan lima elemen pada masalah sampah di lingkunganmu."
+    },
+    {
+      "id": "eco-030",
+      "category": "Kesehatan",
+      "title": "Jangan menangani benda tajam sembarangan",
+      "body": "Jarum dan pecahan benda tajam dapat melukai kulit dan menimbulkan pajanan pada bahan terkontaminasi. Pemisahan dan wadah tahan tusuk mengurangi risiko pekerja.",
+      "action": "Jangan mengambil jarum tanpa prosedur dan perlindungan yang sesuai."
+    },
+    {
+      "id": "eco-031",
+      "category": "Kesehatan",
+      "title": "Anak dan lansia sebagai kelompok rentan",
+      "body": "Kerentanan dipengaruhi kondisi fisiologis, penyakit yang menyertai, pola aktivitas, dan lingkungan. Melindungi kelompok rentan perlu memahami jenis paparannya.",
+      "action": "Pertimbangkan lokasi sekolah, lansia, dan fasilitas kesehatan dalam pemetaan risiko."
+    },
+    {
+      "id": "eco-032",
+      "category": "Kesehatan",
+      "title": "Lalat dan tikus di sekitar sampah",
+      "body": "Timbunan sampah yang tidak dikelola dapat menyediakan makanan atau habitat bagi hama tertentu. Banyaknya vektor tidak otomatis membuktikan adanya kasus penyakit.",
+      "action": "Kurangi sumber makanan terbuka dan perbaiki kebersihan penyimpanan sampah."
+    },
+    {
+      "id": "eco-033",
+      "category": "Kesehatan",
+      "title": "Menguji klaim efektivitas program",
+      "body": "Jumlah unduhan, laporan, dan sosialisasi adalah indikator aktivitas. Perbaikan kondisi lingkungan membutuhkan pengamatan atau pengukuran hasil nyata.",
+      "action": "Bedakan aktivitas digital, output, outcome lingkungan, dan dampak kesehatan."
+    },
+    {
+      "id": "eco-034",
+      "category": "Kesehatan",
+      "title": "Dosis dan durasi penting",
+      "body": "Efek toksik dapat bergantung pada dosis, lamanya pajanan, dan sifat agen. Konsentrasi di udara atau air tidak selalu sama dengan dosis yang masuk ke tubuh.",
+      "action": "Hindari menyimpulkan risiko hanya dari satu angka tanpa konteks pajanan."
+    },
+    {
+      "id": "eco-035",
+      "category": "Kesehatan",
+      "title": "Aman saat membuat laporan lingkungan",
+      "body": "Dokumentasi kejadian berpotensi menimbulkan risiko jika pelapor mendekati tumpahan kimia, limbah medis, atau api. Lokasi dan gambar juga dapat mengandung data pribadi.",
+      "action": "Ambil foto dari titik aman dan hindari membagikan data sensitif."
+    },
+    {
+      "id": "eco-036",
+      "category": "Alam",
+      "title": "Mengapa keanekaragaman hayati penting?",
+      "body": "Keanekaragaman organisme mendukung banyak proses ekosistem. Hilangnya spesies atau habitat dapat mengubah hubungan antarorganisme dan jasa ekosistem.",
+      "action": "Pelajari spesies lokal dan ancaman habitatnya dari lembaga konservasi terpercaya."
+    },
+    {
+      "id": "eco-037",
+      "category": "Alam",
+      "title": "Hutan dan siklus air",
+      "body": "Vegetasi hutan berkaitan dengan infiltrasi, evapotranspirasi, dan aliran permukaan. Dampak perubahan tutupan lahan bergantung pada konteks wilayah.",
+      "action": "Amati perubahan tutupan lahan dan sumber air di sekitarmu."
+    },
+    {
+      "id": "eco-038",
+      "category": "Alam",
+      "title": "Mangrove melindungi pesisir",
+      "body": "Mangrove dapat membantu meredam energi gelombang, menyimpan karbon, dan menyediakan habitat. Efektivitas perlindungan tidak menggantikan tata ruang dan adaptasi pesisir.",
+      "action": "Dukung perlindungan mangrove alami, bukan penanaman yang salah lokasi."
+    },
+    {
+      "id": "eco-039",
+      "category": "Alam",
+      "title": "Lahan gambut dan kebakaran",
+      "body": "Gambut yang mengering lebih rentan terbakar; kebakaran dapat menghasilkan asap dan melepaskan karbon. Pengelolaan air menjadi bagian penting pencegahan.",
+      "action": "Jangan melakukan pembakaran lahan dan pelajari peran pembasahan gambut."
+    },
+    {
+      "id": "eco-040",
+      "category": "Alam",
+      "title": "Burung sebagai bagian ekosistem",
+      "body": "Burung berperan dalam berbagai interaksi ekologis, termasuk penyebaran biji atau pengendalian serangga pada jenis tertentu. Populasi burung bergantung pada kondisi habitat.",
+      "action": "Amati burung tanpa mengganggu sarang atau mengambil satwa liar."
+    },
+    {
+      "id": "eco-041",
+      "category": "Alam",
+      "title": "Orangutan dan keterhubungan hutan",
+      "body": "Orangutan membutuhkan habitat hutan yang memadai dan terhubung. Fragmentasi habitat dapat menghambat pergerakan dan meningkatkan konflik manusia-satwa.",
+      "action": "Dukung konservasi habitat alih-alih berinteraksi langsung dengan satwa liar."
+    },
+    {
+      "id": "eco-042",
+      "category": "Alam",
+      "title": "Terumbu karang rentan perubahan",
+      "body": "Terumbu karang dapat terdampak suhu laut, pencemaran, dan tekanan lokal. Upaya konservasi perlu memperhatikan sumber tekanan dan kondisi ekosistem.",
+      "action": "Jangan membuang sampah di pantai atau menyentuh karang saat wisata."
+    },
+    {
+      "id": "eco-043",
+      "category": "Alam",
+      "title": "Memahami kawasan konservasi",
+      "body": "Kawasan konservasi bertujuan menjaga nilai ekologis dan memerlukan pengelolaan, penegakan aturan, serta pelibatan masyarakat. Label kawasan saja belum menjamin perlindungan efektif.",
+      "action": "Pelajari aturan kunjungan dan upaya konservasi pada area terdekat."
+    },
+    {
+      "id": "eco-044",
+      "category": "Iklim",
+      "title": "Cuaca berbeda dari iklim",
+      "body": "Cuaca menggambarkan kondisi atmosfer jangka pendek, sedangkan iklim adalah pola statistik jangka panjang. Satu hari panas tidak membuktikan tren iklim.",
+      "action": "Gunakan data periode panjang saat membahas perubahan iklim."
+    },
+    {
+      "id": "eco-045",
+      "category": "Iklim",
+      "title": "Sampah organik dan metana",
+      "body": "Penguraian organik tanpa oksigen dapat menghasilkan metana. Dampak emisi dipengaruhi sistem pengelolaan, penangkapan gas, dan kondisi operasional.",
+      "action": "Kurangi sisa pangan dan dukung pengelolaan organik yang tepat."
+    },
+    {
+      "id": "eco-046",
+      "category": "Iklim",
+      "title": "Jejak karbon sebuah produk",
+      "body": "Menilai emisi produk idealnya mempertimbangkan bahan, produksi, transportasi, pemakaian, dan akhir masa pakai. Klaim ramah lingkungan perlu batas perhitungan.",
+      "action": "Bandingkan kebutuhan dan umur pakai sebelum membeli barang baru."
+    },
+    {
+      "id": "eco-047",
+      "category": "Iklim",
+      "title": "Adaptasi dan mitigasi",
+      "body": "Mitigasi menekan penyebab perubahan iklim, sedangkan adaptasi menyesuaikan diri dengan dampaknya. Keduanya sering saling melengkapi.",
+      "action": "Pilih tindakan yang sesuai risiko setempat seperti panas, banjir, atau kekeringan."
+    },
+    {
+      "id": "eco-048",
+      "category": "Iklim",
+      "title": "Mengapa ruang hijau penting?",
+      "body": "Vegetasi dapat memberi keteduhan dan manfaat ekologis, tetapi fungsi ruang hijau dipengaruhi jenis pohon, tata letak, dan pemeliharaan.",
+      "action": "Dukung ruang hijau yang sesuai lokasi dan tidak merusak fasilitas umum."
+    },
+    {
+      "id": "eco-049",
+      "category": "Iklim",
+      "title": "Sumber emisi bukan hanya sampah",
+      "body": "Emisi gas rumah kaca juga berasal dari energi, transportasi, pertanian, dan perubahan lahan. Prioritas pengendalian perlu didasarkan pada inventarisasi yang benar.",
+      "action": "Jangan menyamakan satu masalah lingkungan dengan keseluruhan penyebab iklim."
+    },
+    {
+      "id": "eco-050",
+      "category": "Komunitas",
+      "title": "Mengapa program 3R bisa gagal?",
+      "body": "Tempat sampah terpilah tidak cukup bila pengangkutan mencampur ulang atau tidak ada pengolahan berikutnya. Keberhasilan perlu menilai seluruh rantai sistem.",
+      "action": "Tanyakan ke mana sampah pergi setelah dikumpulkan."
+    },
+    {
+      "id": "eco-051",
+      "category": "Komunitas",
+      "title": "Partisipasi vs perubahan lingkungan",
+      "body": "Hadir dalam sosialisasi tidak sama dengan konsisten memilah sampah. Hasil program perlu indikator yang lebih dekat dengan kondisi fisik.",
+      "action": "Pantau sampah terpilah benar dan residu, bukan hanya jumlah peserta."
+    },
+    {
+      "id": "eco-052",
+      "category": "Komunitas",
+      "title": "Mengukur perubahan residu",
+      "body": "Bandingkan massa residu pada periode dan cakupan yang setara sebelum dan sesudah intervensi. Pergeseran lokasi sampah dapat mengaburkan kesimpulan.",
+      "action": "Gunakan timbangan dan pencatatan yang konsisten."
+    },
+    {
+      "id": "eco-053",
+      "category": "Komunitas",
+      "title": "Peran petugas dan warga",
+      "body": "Warga dapat melapor serta memilah; petugas bertanggung jawab sesuai kewenangan dan SOP. Alur tanggung jawab yang tidak jelas membuat laporan mandek.",
+      "action": "Tuliskan siapa menerima, memverifikasi, menindaklanjuti, dan menutup laporan."
+    },
+    {
+      "id": "eco-054",
+      "category": "Komunitas",
+      "title": "Data dashboard bukan bukti lapangan",
+      "body": "Status selesai pada aplikasi bisa berarti administrasi ditutup, tetapi kebersihan titik perlu diverifikasi. Bukti foto sebelum-sesudah pun harus dikaitkan dengan lokasi dan waktu.",
+      "action": "Tentukan indikator bukti lapangan pada evaluasi EcoCycle."
+    },
+    {
+      "id": "eco-055",
+      "category": "Komunitas",
+      "title": "Mengukur waktu respons secara tepat",
+      "body": "Waktu dari masuk laporan sampai mulai diproses berbeda dari waktu sampai selesai. Mencampur keduanya membuat perbandingan kinerja tidak valid.",
+      "action": "Catat waktu masuk, verifikasi, mulai penanganan, dan selesai secara terpisah."
+    },
+    {
+      "id": "eco-056",
+      "category": "Komunitas",
+      "title": "Keadilan akses digital",
+      "body": "Sebagian warga mungkin punya keterbatasan perangkat, data internet, literasi, atau aksesibilitas. Program digital perlu kanal alternatif dan desain inklusif.",
+      "action": "Uji aplikasi pada HP sederhana dan libatkan orang dengan kemampuan digital berbeda."
+    },
+    {
+      "id": "eco-057",
+      "category": "Komunitas",
+      "title": "Menghindari insentif laporan palsu",
+      "body": "Mekanisme penghargaan berdasarkan banyaknya laporan bisa mendorong duplikasi. Engagement sebaiknya menghargai pembelajaran atau aksi pencegahan yang bermakna.",
+      "action": "Gunakan misi mingguan dan kuis, bukan streak melaporkan masalah."
+    }
+  ]
+}
