@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-24T13:15:31+00:00",
-  "updated": "2026-11-24T13:15:31+00:00",
+  "checked_at": "2026-11-24T13:30:42+00:00",
+  "updated": "2026-11-24T13:30:42+00:00",
   "items": [
     {
       "title": "Bahlil Jangan Bermain Kata, WUP Tetap Jadi Pintu Masuk Tambang di Habitat Badak Jawa - WALHI",
@@ -2075,6 +2075,14 @@
       "via": "Google News RSS"
     },
     {
+      "title": "Aditya Galih Prasetya - Biodiversity Warriors",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1URWdlM2ZmNFlKeUtYWkx4NVM2VHdHVTR5VzhKdTcxUDJITlR3SXdkTnZpYmZDeXIwbER0bklGbHBSbUJHRkNoTjM5dFhxXzVLOGU3aWYzWUVCcWNuR3lQc0JGNU03dUJRVGc?oc=5",
+      "date": "2026-09-25",
+      "source": "Yayasan KEHATI",
+      "source_id": "kehati",
+      "via": "Google News RSS"
+    },
+    {
       "title": "REQUEST FOR PROPOSAL: CONSULTANT FOR COST-BENEFIT ANALYSIS IN SOUTHERN JAVA LARGE-SCALE MARINE PROTECTED AREA (LSMPA) - WWF-INDONESIA",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxONjE0UmxlX2NVSmZLRFV6SnA4c25Sc2tQWmxvRE44Sml3NmxzZS1tMmt2ZHg3ZFlhZk11RlF2YmlxUURvTkU5TXVkTTFWTDExdVRYOVNIdmd1NVhXVDI5QTNmazAzeERQU05LYnRQNEVMeE53RTV6TXNzWG10ek1FR0dVV01jMVM0cU1STmdnSk11ZkVad01Hd2ZRU2E5MnhKa0xMenFWZU5zZVpEYnZ1SE1BOFI?oc=5",
       "date": "2026-09-25",
@@ -3341,7 +3349,7 @@
       "name": "Yayasan KEHATI",
       "mode": "google_news",
       "label": "Google News RSS (pencarian situs)",
-      "count": 47
+      "count": 48
     },
     {
       "id": "ykan",
