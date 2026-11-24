@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""EcoCycle headline index: direct publisher RSS/Atom with link checks.
+"""EcoCycle headline index: public RSS/Atom with Google News RSS fallback.
 
 - Respects feed availability; never invents article/date metadata.
 - Preserves previously collected entries across failed updates.
 - Publishes titles and links only; full articles stay at the publishers.
-- Google News discovery is NOT published as an unverified article link.
+- May be delayed/unavailable: Google News is discovery, not a direct publisher feed.
 """
 import concurrent.futures
 from datetime import datetime, timezone, timedelta
@@ -14,7 +14,6 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlparse, quote, urlencode, urljoin
 from urllib.request import Request, urlopen
-from urllib.error import HTTPError, URLError
 import json
 import re
 import sys
@@ -50,43 +49,6 @@ def host_ok(url,domain):
         u=urlparse(url)
         return u.scheme=='https' and (u.hostname==domain or u.hostname.endswith('.'+domain))
     except (ValueError,AttributeError):return False
-
-def article_link_alive(url, domain):
-    """Best-effort check of a direct publisher article URL, not Google News.
-
-    A 200 from a publisher is a point-in-time check, never a lifetime guarantee.
-    HEAD is cheap; retry GET for publishers rejecting HEAD requests.
-    """
-    if not host_ok(url, domain):
-        return False
-    for method in ('HEAD', 'GET'):
-        try:
-            h=dict(HEADERS)
-            if method=='GET': h['Range']='bytes=0-1023'
-            req=Request(url, headers=h, method=method)
-            with urlopen(req,timeout=8) as resp:
-                if not host_ok(resp.geturl(),domain):return False
-                return 200 <= resp.status < 400
-        except HTTPError as e:
-            if method=='HEAD' and e.code in (400,403,405,406,501):continue
-            return False
-        except (URLError, TimeoutError, ValueError, OSError):
-            if method=='HEAD':continue
-            return False
-    return False
-
-def verified_entries(items, src):
-    # Bound network work: article checks are parallel but limited per publisher.
-    candidates=items[:20]
-    results=[]
-    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
-        checks=list(pool.map(lambda a: article_link_alive(a['url'], src['domain']), candidates))
-    checked=datetime.now(timezone.utc).isoformat(timespec='seconds')
-    for item, ok in zip(candidates,checks):
-        if ok:
-            item={**item, 'verified_at':checked}
-            results.append(item)
-    return results
 
 def txt(s):
     return re.sub(r'\s+',' ',unescape(re.sub('<[^>]+>',' ',s or ''))).strip()[:300]
@@ -152,8 +114,6 @@ def google_feed(src):
     return GOOGLE+urlencode({'q':q,'hl':'id','gl':'ID','ceid':'ID:id'})
 
 def fetch_source(src):
-    # Strict publishing mode: RSS directly from publishers only.
-    # Google News search results are deliberately NOT published as article links.
     tried=set(); failures=[]
     feeds=list(src.get('feeds',[])) + discover(src)
     for url in feeds[:5]:
@@ -163,15 +123,17 @@ def fetch_source(src):
             data,final,_=get(url)
             if not host_ok(final,src['domain']):raise ValueError('redirected off publisher')
             items=parse_feed(data,src)
-            confirmed=verified_entries(items,src)
-            if confirmed:
-                return {'id':src['id'],'mode':'verified_publisher_rss','items':confirmed,
-                        'label':'RSS penerbit; URL artikel dicek','count':len(confirmed)}
-            failures.append('RSS tersedia tetapi tidak ada tautan yang lolos pemeriksaan')
-        except Exception as e:failures.append(str(e)[:90])
-    return {'id':src['id'],'mode':'unavailable','items':[],
-            'label':'Buka situs resmi penerbit','count':0,
-            'reason':' | '.join(failures[-2:])[:180]}
+            if items:return {'id':src['id'],'mode':'publisher_rss','items':items,'label':'RSS penerbit','count':len(items)}
+            failures.append('empty RSS')
+        except Exception as e:failures.append(str(e)[:80])
+    try:
+        data,final,_=get(google_feed(src))
+        if not host_ok(final,'news.google.com'):raise ValueError('Google News redirect changed')
+        items=parse_feed(data,src,'Google News RSS')
+        if items:return {'id':src['id'],'mode':'google_news','items':items,'label':'Google News RSS (pencarian situs)','count':len(items)}
+        failures.append('no recent indexed article')
+    except Exception as e:failures.append(str(e)[:80])
+    return {'id':src['id'],'mode':'unavailable','items':[],'label':'Belum dapat diperbarui otomatis','count':0,'reason':' | '.join(failures[-2:])[:180]}
 
 def refresh():
     srcs=json.loads((ROOT/'sources.json').read_text(encoding='utf-8'))
@@ -190,27 +152,14 @@ def refresh():
     # Errors remain visible in workflow logs, never in public EcoNews UI.
     successes=[r for r in results if r.get('items')]
     if not successes:
-        print('WARNING: No source passed verification. Retaining last known good data; no invented articles.')
+        print('WARNING: No fresh source could be read. Keeping last known good news.json unchanged.')
         return
-    # Remove all Google News links from exported news.json, even if present in old data.
-    # Retain last verified publisher links for up to 30 days when a source is temporarily down.
-    src_domains={s['id']:s['domain'] for s in srcs}
-    cutoff=datetime.now(timezone.utc)-timedelta(days=30)
-    def safe_old(a):
-        if not isinstance(a,dict) or not a.get('url') or not a.get('date'):return False
-        domain=src_domains.get(a.get('source_id'))
-        if not domain or not host_ok(a['url'],domain):return False
-        verified=a.get('verified_at')
-        if not verified:return False  # old RSS links were never checked
-        try:
-            dt=datetime.fromisoformat(verified.replace('Z','+00:00'))
-            return dt.tzinfo is not None and dt>=cutoff
-        except (ValueError,TypeError):return False
+    # Preserve old headlines from publishers even if an individual feed goes offline.
     allitems={}
-    for a in ([a for a in old.get('items',[]) if safe_old(a)]+[a for r in results for a in r.get('items',[]) ]):
+    for a in (old.get('items',[]) + [a for r in results for a in r.get('items',[]) ]):
         if not isinstance(a,dict) or not a.get('date') or not a.get('source_id'):continue
         allitems[a['source_id']+'|'+a['url']]=a
-    items=sorted(allitems.values(),key=lambda x:(x['date'],x['source']),reverse=True)[:300]
+    items=sorted(allitems.values(),key=lambda x:(x['date'],x['source']),reverse=True)[:500]
     statuses=[]
     for s in srcs:
         r=next((x for x in results if x['id']==s['id']),None) or {'mode':'unavailable','label':'Unknown'}
@@ -218,7 +167,7 @@ def refresh():
     now=datetime.now(timezone.utc).isoformat(timespec='seconds')
     # checked_at means aggregator ran; it does NOT mean every publisher posted today.
     new={'checked_at':now,'updated':now if items!=old.get('items',[]) else old.get('updated'), 'items':items,'status':statuses,
-         'note':'Artikel dari RSS penerbit, dengan pemeriksaan status tautan saat pengambilan. Pemeriksaan tidak menjamin tautan selamanya aktif; buka sumber resmi bila halaman berubah.'}
+         'note':'Daftar judul dari RSS/indeks; pembaruan tergantung ketersediaan dan indeksasi sumber. Tidak selalu real-time.'}
     out.write_text(json.dumps(new,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print('Saved',len(items),'article links,',len(statuses),'sources')
 
