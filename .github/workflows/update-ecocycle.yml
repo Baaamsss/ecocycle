@@ -1,32 +1,37 @@
+
 name: Deploy EcoCycle & refresh news safely
+
 on:
   push:
     branches: [main]
   workflow_dispatch:
   schedule:
-    # 01:17 / 07:17 / 13:17 / 19:17 UTC (08:17 / 14:17 / 20:17 / 02:17 WIB)
+    # 08:17 / 14:17 / 20:17 / 02:17 WIB
     - cron: '17 1,7,13,19 * * *'
+
 permissions:
   contents: write
   pages: write
   id-token: write
+
 concurrency:
   group: ecocycle-pages
   cancel-in-progress: false
+
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     timeout-minutes: 12
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
         with:
           persist-credentials: true
+
       - name: Collect headlines with last-good cache protection
         run: python3 scripts/refresh_news.py
+
       - name: Save refreshed headline data to the repository
         run: |
           git add news.json
@@ -35,12 +40,25 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git commit -m 'Update EcoCycle environmental headline index [skip ci]'
           git push origin HEAD:main
+
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
+
       - name: Upload static website
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
       - name: Deploy GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
