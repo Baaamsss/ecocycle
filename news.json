@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-24T13:30:42+00:00",
-  "updated": "2026-11-24T13:30:42+00:00",
+  "checked_at": "2026-11-24T14:04:35+00:00",
+  "updated": "2026-11-24T14:04:35+00:00",
   "items": [
     {
       "title": "Bahlil Jangan Bermain Kata, WUP Tetap Jadi Pintu Masuk Tambang di Habitat Badak Jawa - WALHI",
@@ -69,6 +69,14 @@
     {
       "title": "Saat Habitat Gajah Sumatera Terbakar, Apa Ada Indikasi Perburuan Satwa Liar?",
       "url": "https://mongabay.co.id/short-article/2026/11/saat-habitat-gajah-sumatera-terbakar-apa-ada-indikasi-perburuan-satwa-liar/",
+      "date": "2026-11-24",
+      "source": "Mongabay Indonesia",
+      "source_id": "mongabay",
+      "via": "RSS penerbit"
+    },
+    {
+      "title": "Lubang Bekas Tambang Batubara Kaltim Terus Memakan Korban",
+      "url": "https://mongabay.co.id/2026/11/24/lubang-bekas-tambang-batubara-di-kaltim-terus-memakan-korban/",
       "date": "2026-11-24",
       "source": "Mongabay Indonesia",
       "source_id": "mongabay",
@@ -701,6 +709,14 @@
     {
       "title": "PENGEMBANGAN CENTER OF EXCELLENCE (COE) ALOR MPA SEBAGAI PUSAT PEMBELAJARAN DAN PENGUATAN KAPASITAS PENGELOLAAN KAWASAN KONSERVASI - WWF-INDONESIA",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOOGlodkZsV180NGY3VlZZNC12QjB4SVJPX3hiQXdvdHhuaXNudlUxY2Ricmd6TUlRY1JfR2E3Wm9fZ3hHSFlQdjZUaTZXNDM3WG11S29aYjRoODBSREc1bHk2ZnJjVmh2Z1RtTTF3Tkk1YjlSbXBhMzd0MDdHUi1iem05QWhBNWx2bTc4YVBzMmVVaEdIYmYwVThaRG1vOTBSMkNhT0lhUmU3anlHUjdnZEtWT3p4eFplb1NLQnFB?oc=5",
+      "date": "2026-11-12",
+      "source": "WWF Indonesia",
+      "source_id": "wwf",
+      "via": "Google News RSS"
+    },
+    {
+      "title": "Center of Excellence Alor Marine Protected Area - WWF-INDONESIA",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1qc1RPdXRXMlNoYVB2QjhESV9GVHRrcFpBbGl4TXR0elFHclNpVGE3WW1sdWh5REIxOWV3T3U3YXlFbjhFMXNNcUdlM1FFN2xNTUZKYnE2ZWkzanVvVGhDZWlIUk00MVpHZEwwXzFfSWtvLWVpcnZtdjExMA?oc=5",
       "date": "2026-11-12",
       "source": "WWF Indonesia",
       "source_id": "wwf",
@@ -1416,6 +1432,14 @@
       "date": "2026-10-20",
       "source": "Yayasan KEHATI",
       "source_id": "kehati",
+      "via": "Google News RSS"
+    },
+    {
+      "title": "SEBELUM BANGUN LEBIH BANYAK BETON, HARUS PULIHKAN ALAM DULU - WWF-INDONESIA",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPVWcxT2NHUkpzZkVUX0lIeFJXMnY3dDdtM1JXU1lDSXczUFU0LWUxYnZtNEF2Z2xWaTVfaVUteGViRmdFS3cwcm10WHUwUFNHQWp1OWFvaEN6YU83c3FpTlo4MW5DbW9SbjF4d1BwTFlqWWk5UnVsbVo0RjVFYlAwRVp3LVVvcVBDRmpncTl3?oc=5",
+      "date": "2026-10-20",
+      "source": "WWF Indonesia",
+      "source_id": "wwf",
       "via": "Google News RSS"
     },
     {
@@ -3321,7 +3345,7 @@
       "name": "Mongabay Indonesia",
       "mode": "publisher_rss",
       "label": "RSS penerbit",
-      "count": 20
+      "count": 21
     },
     {
       "id": "greenpeace",
@@ -3363,7 +3387,7 @@
       "name": "WWF Indonesia",
       "mode": "google_news",
       "label": "Google News RSS (pencarian situs)",
-      "count": 37
+      "count": 39
     },
     {
       "id": "burung",
