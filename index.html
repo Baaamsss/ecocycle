@@ -69,7 +69,7 @@
    <button class="nav-link" data-route="news" aria-label="Berita Lingkungan"><svg class="ico"><use href="#i-news"/></svg><span>Berita Lingkungan</span><b id="ecoNavNewsCount" class="eco-news-alert" hidden></b></button>
    <button class="nav-link" data-route="dashboard"><svg class="ico"><use href="#i-chart"/></svg><span>Dashboard Petugas</span></button>
   </nav>
-  <div class="sidebar-bottom"><div class="demo-note"><div class="demo-tag">● Prototype akademik</div><p>Seluruh data untuk simulasi. Tidak terhubung ke petugas kebersihan atau layanan pemerintah.</p></div><div class="sidebar-foot">FKM UMJ · TKL × TKD<br/>EcoCycle v3.0 · Demo edukasi</div></div>
+  <div class="sidebar-bottom"><div class="demo-note"><div class="demo-tag">● Prototype akademik</div><p>Seluruh data untuk simulasi. Tidak terhubung ke petugas kebersihan atau layanan pemerintah.</p></div><div class="sidebar-foot">FKM UMJ · TKL × TKD<br/>EcoCycle v3.2 · Demo edukasi</div></div>
  </aside>
  <div class="workspace">
   <header class="topbar"><div class="top-left"><div class="page-icon"><svg class="ico"><use id="topIcon" href="#i-home"/></svg></div><div><div class="top-label">EcoCycle / <span id="topBreadcrumb">Beranda</span></div><div class="top-title" id="topTitle">Ringkasan Lingkungan</div></div></div><div class="top-actions"><span class="pill"><span class="live-dot"></span>Mode Simulasi</span><span class="avatar" aria-label="Pengguna demo">EC</span></div></header>
@@ -172,9 +172,40 @@
  function validArticle(a){if(!a||typeof a.title!=='string'||typeof a.url!=='string'||typeof a.source!=='string'||typeof a.source_id!=='string')return false;try{const u=new URL(a.url);return u.protocol==='https:'&&sources.some(s=>s.id===a.source_id&&(u.hostname===s.domain||u.hostname.endsWith('.'+s.domain)||u.hostname==='news.google.com'));}catch(e){return false;}}
  function articleDate(a){if(!a.date||!/^\d{4}-\d{2}-\d{2}$/.test(a.date))return null;const d=Date.parse(a.date+'T00:00:00Z');return Number.isFinite(d)?d:null;}
  function isRecentArticle(a){const d=articleDate(a);return d!==null&&d>=(Date.now()-7*86400000)&&d<=(Date.now()+86400000);}
- function updateNewsAlerts(){const n=newsItems.filter(a=>isRecentArticle(a)&&!seenNews.includes(a.url)).length;document.querySelectorAll('.eco-news-alert').forEach(el=>{el.textContent=n>99?'99+':String(n);el.hidden=!n;});}
- function filteredNews(){return newsItems.filter(a=>(newsSource==='all'||a.source_id===newsSource)&&((a.title+' '+a.source).toLowerCase().includes(newsSearch.toLowerCase()))&&(!newsRecent||isRecentArticle(a)));}
- function articleCards(items){return items.length?items.map(a=>`<article class="card eco-card"><div class="eco-link-row"><span class="eco-label">${esc(a.source)}</span>${isRecentArticle(a)?'<span class="eco-mark new">Terbit ≤7 hari</span>':''}</div><h3><a class="eco-news-link" href="${esc(a.url)}" data-eco-news-open="${esc(a.url)}" target="_blank" rel="noopener noreferrer">${esc(a.title)}</a></h3><p class="eco-news-date">Terbit: ${esc(a.date||'Tidak diketahui')} · ${a.via==='Google News RSS'?'Tanggal dalam Google News RSS':'RSS penerbit'}</p><div class="eco-link-row"><span class="eco-source-stats">${seenNews.includes(a.url)?'✓ Sudah dibuka':'Belum dibuka'}</span><a class="eco-news-link" href="${esc(a.url)}" data-eco-news-open="${esc(a.url)}" target="_blank" rel="noopener noreferrer">Buka artikel ↗</a></div></article>`).join(''):'<div class="eco-empty"><h3>Jelajahi inspirasi lingkungan</h3><p>Belum ada judul yang cocok dalam koleksi ini. Lu bisa membuka publikasi terbaru lewat daftar penerbit di bawah.</p></div>';}
+ // EcoNews V3.2: link perantara Google News RSS tidak selalu bisa membuka artikel asli.
+ // Jika URL penerbit belum tersedia, cari judul pada domain penerbit yang tercantum.
+ function newsDestination(a){
+  const source=sources.find(s=>s.id===a.source_id);
+  let viaGoogle=a.via==='Google News RSS';
+  try{viaGoogle=viaGoogle||new URL(a.url).hostname==='news.google.com';}catch(e){viaGoogle=true;}
+  if(viaGoogle){
+   const headline=a.title.replace(/\s+[-–|]\s+(WALHI|WWF[^-]*|Greenpeace[^-]*|Mongabay[^-]*)$/i,'').trim().slice(0,130);
+   const q=(source&&source.domain?'site:'+source.domain+' ':'')+headline;
+   return {href:'https://www.google.com/search?q='+encodeURIComponent(q),label:'Cari artikel di penerbit ↗',note:'Ditemukan lewat Google News; tautan artikel asli belum terverifikasi.'};
+  }
+  return {href:a.url,label:'Buka artikel ↗',note:'Tautan dari RSS penerbit. Jika telah dipindah, gunakan halaman resmi penerbit.'};
+ }
+ // Hilangkan judul yang sangat mirip bila berasal dari penerbit dan tanggal yang sama.
+ // Hindari menghapus cerita berbeda yang hanya membahas isu umum serupa.
+ function newsWords(t){return new Set(String(t||'').toLowerCase().normalize('NFKD').replace(/[^a-z0-9\s]/g,' ').split(/\s+/).filter(w=>w.length>2));}
+ function similarNews(a,b){
+  if(a.source_id!==b.source_id||a.date!==b.date)return false;
+  const A=newsWords(a.title),B=newsWords(b.title);let shared=0;
+  A.forEach(w=>{if(B.has(w))shared++;});
+  return shared>=7 && 2*shared/(A.size+B.size)>=0.59;
+ }
+ function dedupeNews(items){
+  const result=[];
+  for(const article of items){
+   const idx=result.findIndex(existing=>similarNews(existing,article));
+   if(idx===-1)result.push(article);
+   else if(result[idx].via==='Google News RSS' && article.via!=='Google News RSS')result[idx]=article;
+  }
+  return result;
+ }
+ function updateNewsAlerts(){const n=dedupeNews(newsItems).filter(a=>isRecentArticle(a)&&!seenNews.includes(a.url)).length;document.querySelectorAll('.eco-news-alert').forEach(el=>{el.textContent=n>99?'99+':String(n);el.hidden=!n;});}
+ function filteredNews(){return dedupeNews(newsItems).filter(a=>(newsSource==='all'||a.source_id===newsSource)&&((a.title+' '+a.source).toLowerCase().includes(newsSearch.toLowerCase()))&&(!newsRecent||isRecentArticle(a)));}
+ function articleCards(items){return dedupeNews(items).length?dedupeNews(items).map(a=>{const dest=newsDestination(a);return `<article class="card eco-card"><div class="eco-link-row"><span class="eco-label">${esc(a.source)}</span>${isRecentArticle(a)?'<span class="eco-mark new">Terbit ≤7 hari</span>':''}</div><h3><a class="eco-news-link" href="${esc(dest.href)}" data-eco-news-open="${esc(a.url)}" target="_blank" rel="noopener noreferrer">${esc(a.title)}</a></h3><p class="eco-news-date">Terbit: ${esc(a.date||'Tidak diketahui')} · ${a.via==='Google News RSS'?'Indeks Google News':'RSS penerbit'}</p><div class="eco-link-row"><span class="eco-source-stats">${seenNews.includes(a.url)?'✓ Pernah diklik':'Belum diklik'}</span><a class="eco-news-link" href="${esc(dest.href)}" data-eco-news-open="${esc(a.url)}" target="_blank" rel="noopener noreferrer">${dest.label}</a></div><p class="eco-meta" style="margin:2px 0 0">${esc(dest.note)}</p></article>`;}).join(''):'<div class="eco-empty"><h3>Jelajahi inspirasi lingkungan</h3><p>Belum ada judul yang cocok dalam koleksi ini. Lu bisa membuka publikasi terbaru lewat daftar penerbit di bawah.</p></div>';}
  function sourceLinks(){return `<div class="eco-reading">${sources.map(s=>{const stat=newsStatuses.find(x=>x.id===s.id);return `<article class="card eco-card eco-source-item"><span class="eco-label">${esc(s.category)}</span><h3>${esc(s.name)}</h3><p>Kabar, wawasan, dan publikasi lingkungan dari sumber asli.</p><span class="eco-source-stats">${stat&&stat.count>0?stat.count+' judul dalam koleksi':'Kunjungi penerbit untuk publikasi lainnya'}</span><a href="${esc(s.news)}" class="eco-news-link" target="_blank" rel="noopener noreferrer">Kunjungi penerbit ↗</a></article>`;}).join('')}</div>`;}
  function renderNewsList(){const items=filteredNews();const slot=$('#ecoNewsList');if(slot)slot.innerHTML=articleCards(items.slice(0,newsLimit));const count=$('#ecoNewsCount');if(count)count.textContent=`${Math.min(newsLimit,items.length)} dari ${items.length} artikel tersimpan`;const more=$('#ecoMoreNews');if(more)more.hidden=newsLimit>=items.length;}
  function restoreNewsCache(){
@@ -213,7 +244,7 @@
  <div id="ecoNewsList" class="eco-reading"></div><div class="eco-bar"><button class="btn btn-outline" id="ecoMoreNews">Tampilkan 12 artikel lagi</button></div>
  <div class="section-head"><div><h2>15 penerbit & organisasi</h2><p>Jelajahi publikasi setiap organisasi melalui tautan resmi.</p></div></div>${sourceLinks()}`;}
  function homeExtras(){const p=learnSummary(),daily=lessons[dayNumber()%lessons.length]||lessons[0];return `<div class="section-head"><div><h2>EcoLearn & EcoMission</h2><p>Belajar dan beraksi tanpa harus melaporkan sampah setiap hari.</p></div><button class="muted-link" data-route="learn">Buka edukasi →</button></div><div class="grid-2"><article class="card eco-card"><span class="eco-label">Bacaan pilihan hari ini</span><h3>${esc(daily.title)}</h3><p>${esc(daily.body)}</p><button class="btn btn-outline" data-route="learn">Baca dari ${lessons.length} materi</button></article><article class="card eco-card"><span class="eco-label">EcoMission · Mingguan</span><h3>${p.m} dari 3 aksi selesai</h3><div class="eco-progress"><i style="width:${p.m/3*100}%"></i></div><p>${esc(currentMissions().find(x=>!learning.missions[weekNumber()+':'+x.id])?.title||'Misi minggu ini selesai!')}</p><button class="btn btn-primary" data-route="learn">Mulai misi & kuis</button></article></div>
- <div class="section-head"><div><h2>EcoNews · Berita & inspirasi</h2><p>${esc(newsMode)}</p></div><button class="muted-link" data-route="news">Semua berita →</button></div><div class="eco-reading">${articleCards(newsItems.slice(0,3))}</div>`;}
+ <div class="section-head"><div><h2>EcoNews · Berita & inspirasi</h2><p>${esc(newsMode)}</p></div><button class="muted-link" data-route="news">Semua berita →</button></div><div class="eco-reading">${articleCards(dedupeNews(newsItems).slice(0,3))}</div>`;}
  function home(){const s=stats();return `
  <section class="hero"><div class="hero-text"><div class="eyebrow">Bersama menjaga lingkungan</div><h1>Laporkan sampah.<br>Bangun lingkungan lebih bersih.</h1><p>EcoCycle memvisualisasikan alur pelaporan, verifikasi, dan tindak lanjut permasalahan limbah dalam satu prototype interaktif.</p><button class="btn btn-white" data-route="report">${icon('plus','sm')} Buat Laporan ${icon('arrow','sm')}</button></div>
  <div class="hero-visual" aria-hidden="true"><svg viewBox="0 0 300 250"><circle cx="173" cy="120" r="87" fill="#fff" opacity=".09"/><circle cx="173" cy="120" r="65" fill="#b4f0ca" opacity=".18"/><path d="M120 144c35-1 38-45 85-61-4 38-16 77-67 79" fill="#aef6c9" opacity=".85"/><path d="M119 177c25-37 45-54 73-74" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".8"/><circle cx="90" cy="58" r="8" fill="#f6ca82"/><circle cx="249" cy="192" r="13" fill="#fff" opacity=".35"/><path d="M215 66l5-10 5 10 11 2-8 8 2 11-10-6-10 6 2-11-8-8Z" fill="#f1d495" opacity=".9"/></svg></div></section>
