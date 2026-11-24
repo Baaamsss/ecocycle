@@ -309,6 +309,32 @@
   if(e.target.id!=='reportForm')return;e.preventDefault();const form=e.target;if(!form.reportValidity())return;const button=form.querySelector('button[type=submit]');button.disabled=true;button.textContent='Menyimpan...';const fd=new FormData(form);try{const photo=await photoToData(photoDraft);const report={id:'EC-'+String(Date.now()).slice(-8),title:String(fd.get('title')||'').trim(),category:String(fd.get('category')||''),place:String(fd.get('place')||'').trim(),detail:String(fd.get('detail')||'').trim(),author:String(fd.get('author')||'').trim()||'Warga Demo',status:'wait',createdAt:new Date().toISOString(),startedAt:null,doneAt:null,photo};if(!report.title||!report.category||!report.place||!report.detail)throw Error('Lengkapi kolom wajib.');reports.unshift(report);save();setRoute('status');toast(`Laporan ${report.id} berhasil dibuat (simulasi).`);detail(report.id);}catch(error){toast(error.message||'Gagal memproses laporan.');button.disabled=false;button.innerHTML=`${icon('upload','sm')} Kirim Laporan Simulasi`;}
  });
  document.addEventListener('keydown',e=>{if(e.key==='Escape'){$('#modalMount').innerHTML='';}});
+ 
+ // Kembalikan tautan langsung seperti versi awal.
+ newsDestination = function(a) {
+   if (
+     a.source_id === 'walhi' &&
+     a.title.startsWith('Bahlil Jangan Suka Bermain Kata')
+   ) {
+     return {
+       href: 'https://www.walhi.or.id/',
+       label: 'Kunjungi WALHI ↗',
+       note: 'Tautan artikel ini belum dapat dibuka langsung.'
+     };
+   }
+
+   return {
+     href: a.url,
+     label: 'Buka artikel ↗',
+     note: ''
+   };
+ };
+
+ // Jangan gabungkan dua artikel hanya karena judulnya mirip.
+ dedupeNews = function(items) {
+   return items;
+ };
+
  restoreNewsCache();
  render();
  loadLibrary();
