@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-25T08:42:41+00:00",
-  "updated": "2026-11-25T08:42:41+00:00",
+  "checked_at": "2026-11-25T14:35:27+00:00",
+  "updated": "2026-11-25T14:35:27+00:00",
   "items": [
     {
       "title": "Misteri Limbah Beracun di Hutan Wonosalam Jombang",
@@ -33,6 +33,14 @@
       "source": "Mongabay Indonesia",
       "source_id": "mongabay",
       "via": "RSS penerbit"
+    },
+    {
+      "title": "Cookie Documentation - WWF-INDONESIA",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1zT1dzdkhDQmdHeGo1bG1FZU5rWC05UHVOZE9Ga2pFc19EU0FYN1lDYmdnSGNXRjExY3dWLTBNQlQzYmk3UGRrYThfVldXc3BqanNNTHN3?oc=5",
+      "date": "2026-11-24",
+      "source": "WWF Indonesia",
+      "source_id": "wwf",
+      "via": "Google News RSS"
     },
     {
       "title": "Bahlil Jangan Bermain Kata, WUP Tetap Jadi Pintu Masuk Tambang di Habitat Badak Jawa - WALHI",
@@ -499,14 +507,6 @@
       "via": "Google News RSS"
     },
     {
-      "title": "Rencana Pemindahan Badak Jawa oleh Hashim Diduga untuk Perluasan Tambang Emas di Ujung Kulon - WALHI",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOWVVMc0pvY2VJdjNjbEtyZE9WQk5DcEY5U2t0QlI4Yk15bFN5NzRMQXdTWnRoODEzemtqa1lWY1U5LWs1Z09wSnNoZ3NGVHc5R05XX1RJVWNjMEphallGdXVwT0lEZnhXZjBFUzNBS01fZjJFNmdYMUx3NDFDdjRQdlZvZnVLZktzUWZVYjF1a3R6RnhGblBEUlhfSGhXcnpPNHkxMVdEbnBaSGlPVUdNLWJ2dlJDeEk?oc=5",
-      "date": "2026-11-18",
-      "source": "WALHI / Friends of the Earth Indonesia",
-      "source_id": "walhi",
-      "via": "Google News RSS"
-    },
-    {
       "title": "Taman Nasional Ujung Kulon (TNUK) - WALHI",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5EcjBSeXZ5dzR0UkpXRGR3MHFQaUR3TWZra3pvWUxZZk5VLTF2TmNZWFpkRGI2TGRlbU5sNE9CdklZbkpUM0RXaUMyY2lRdkhleDBMTmhfWWJuWHVOUjFoMEZMdE1XMFVwM1Nv?oc=5",
       "date": "2026-11-18",
@@ -608,6 +608,14 @@
       "date": "2026-11-17",
       "source": "Yayasan KEHATI",
       "source_id": "kehati",
+      "via": "Google News RSS"
+    },
+    {
+      "title": "Rencana Pemindahan Badak Jawa oleh Hashim Diduga untuk Perluasan Tambang Emas di Ujung Kulon - WALHI",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOWVVMc0pvY2VJdjNjbEtyZE9WQk5DcEY5U2t0QlI4Yk15bFN5NzRMQXdTWnRoODEzemtqa1lWY1U5LWs1Z09wSnNoZ3NGVHc5R05XX1RJVWNjMEphallGdXVwT0lEZnhXZjBFUzNBS01fZjJFNmdYMUx3NDFDdjRQdlZvZnVLZktzUWZVYjF1a3R6RnhGblBEUlhfSGhXcnpPNHkxMVdEbnBaSGlPVUdNLWJ2dlJDeEk?oc=5",
+      "date": "2026-11-17",
+      "source": "WALHI / Friends of the Earth Indonesia",
+      "source_id": "walhi",
       "via": "Google News RSS"
     },
     {
@@ -3923,7 +3931,7 @@
       "name": "WWF Indonesia",
       "mode": "google_news",
       "label": "Google News RSS (pencarian situs)",
-      "count": 40
+      "count": 41
     },
     {
       "id": "burung",
@@ -3977,8 +3985,8 @@
     {
       "id": "ci",
       "name": "Conservation International (global)",
-      "mode": "publisher_rss",
-      "label": "RSS penerbit",
+      "mode": "unavailable",
+      "label": "Belum dapat diperbarui otomatis",
       "count": 70
     }
   ],
