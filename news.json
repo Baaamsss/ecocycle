@@ -1,10 +1,34 @@
 {
-  "checked_at": "2026-11-25T02:29:13+00:00",
-  "updated": "2026-11-25T02:29:13+00:00",
+  "checked_at": "2026-11-25T08:42:41+00:00",
+  "updated": "2026-11-25T08:42:41+00:00",
   "items": [
     {
       "title": "Misteri Limbah Beracun di Hutan Wonosalam Jombang",
       "url": "https://mongabay.co.id/2026/11/25/misteri-limbah-beracun-di-hutan-wonosalam-jombang/",
+      "date": "2026-11-25",
+      "source": "Mongabay Indonesia",
+      "source_id": "mongabay",
+      "via": "RSS penerbit"
+    },
+    {
+      "title": "Data dan Pembiayaan, Tantangan Utama Pengelolaan Karbon Biru Indonesia",
+      "url": "https://mongabay.co.id/2026/11/25/data-dan-pembiayaan-tantangan-utama-pengelolaan-karbon-biru-indonesia/",
+      "date": "2026-11-25",
+      "source": "Mongabay Indonesia",
+      "source_id": "mongabay",
+      "via": "RSS penerbit"
+    },
+    {
+      "title": "Deoksigenasi, Fenomena Hilangnya Oksigen dari Lautan",
+      "url": "https://mongabay.co.id/2026/11/25/deoksigenasi-fenomena-hilangnya-oksigen-dari-lautan/",
+      "date": "2026-11-25",
+      "source": "Mongabay Indonesia",
+      "source_id": "mongabay",
+      "via": "RSS penerbit"
+    },
+    {
+      "title": "Ratusan Ikan Budidaya Mati Serentak di Yogyakarta, Dampak El Nino?",
+      "url": "https://mongabay.co.id/2026/11/25/ratusan-ikan-budidaya-mati-serentak-di-yogyakarta-dampak-el-nino/",
       "date": "2026-11-25",
       "source": "Mongabay Indonesia",
       "source_id": "mongabay",
@@ -3723,6 +3747,14 @@
       "via": "Google News RSS"
     },
     {
+      "title": "YUTRIS, ANGGOTA BARU NYARU MENTENG - Borneo Orangutan Survival",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPSWlRcWxIU2RjdXluSEw4bGYyel95YWN6SXdhN084ZWdvSE9HR1hINFpFWkdWOXpzUFRmcXI1OUhPMHU2U0hFMXM5emJnbUlLNEdQZGFCcWQ4QTN0Z1U0T0tBSVh3MjVxbjBMck84a1dqcTU5bFZtMXByN0lOdXZhWkE1bFltV1RaR0gzRkMxbzZDc2h5?oc=5",
+      "date": "2024-05-01",
+      "source": "Borneo Orangutan Survival Foundation (BOSF)",
+      "source_id": "bosf",
+      "via": "Google News RSS"
+    },
+    {
       "title": "PENGUMUMAN PERGANTIAN POSISI PROGRAM MANAJER NYARU MENTENG - Borneo Orangutan Survival Foundation",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNHRVV0FPSW8tY2dsRUw4ZWZLdEY1bHJFaVBHQ253SE52YXduX3NMUG9waldiUWRwZm1zYkxVMTdMWndOeU81T0VKc1ltbmEtRUNyS0swU0gwM2pWYVdIMXhGcWZvM2hrUFFkR3R6OUxRTk1BbjdhY0w3YTJOSmRFTU11bkY4QklLVHVybElnTEFxcXdU?oc=5",
       "date": "2024-04-30",
@@ -3849,7 +3881,7 @@
       "name": "Mongabay Indonesia",
       "mode": "publisher_rss",
       "label": "RSS penerbit",
-      "count": 23
+      "count": 26
     },
     {
       "id": "greenpeace",
@@ -3926,7 +3958,7 @@
       "name": "Borneo Orangutan Survival Foundation (BOSF)",
       "mode": "google_news",
       "label": "Google News RSS (pencarian situs)",
-      "count": 27
+      "count": 28
     },
     {
       "id": "wetlands",
