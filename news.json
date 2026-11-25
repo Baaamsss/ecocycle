@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-25T14:35:27+00:00",
+  "checked_at": "2026-11-25T20:13:28+00:00",
   "updated": "2026-11-25T14:35:27+00:00",
   "items": [
     {
@@ -3901,8 +3901,8 @@
     {
       "id": "walhi",
       "name": "WALHI / Friends of the Earth Indonesia",
-      "mode": "google_news",
-      "label": "Google News RSS (pencarian situs)",
+      "mode": "unavailable",
+      "label": "Belum dapat diperbarui otomatis",
       "count": 111
     },
     {
@@ -3915,22 +3915,22 @@
     {
       "id": "kehati",
       "name": "Yayasan KEHATI",
-      "mode": "google_news",
-      "label": "Google News RSS (pencarian situs)",
+      "mode": "unavailable",
+      "label": "Belum dapat diperbarui otomatis",
       "count": 49
     },
     {
       "id": "ykan",
       "name": "Yayasan Konservasi Alam Nusantara (YKAN)",
-      "mode": "google_news",
-      "label": "Google News RSS (pencarian situs)",
+      "mode": "unavailable",
+      "label": "Belum dapat diperbarui otomatis",
       "count": 49
     },
     {
       "id": "wwf",
       "name": "WWF Indonesia",
-      "mode": "google_news",
-      "label": "Google News RSS (pencarian situs)",
+      "mode": "unavailable",
+      "label": "Belum dapat diperbarui otomatis",
       "count": 41
     },
     {
@@ -3943,8 +3943,8 @@
     {
       "id": "wcs",
       "name": "Wildlife Conservation Society (WCS) Indonesia",
-      "mode": "google_news",
-      "label": "Google News RSS (pencarian situs)",
+      "mode": "unavailable",
+      "label": "Belum dapat diperbarui otomatis",
       "count": 1
     },
     {
@@ -3964,8 +3964,8 @@
     {
       "id": "bosf",
       "name": "Borneo Orangutan Survival Foundation (BOSF)",
-      "mode": "google_news",
-      "label": "Google News RSS (pencarian situs)",
+      "mode": "unavailable",
+      "label": "Belum dapat diperbarui otomatis",
       "count": 28
     },
     {
@@ -3985,8 +3985,8 @@
     {
       "id": "ci",
       "name": "Conservation International (global)",
-      "mode": "unavailable",
-      "label": "Belum dapat diperbarui otomatis",
+      "mode": "publisher_rss",
+      "label": "RSS penerbit",
       "count": 70
     }
   ],
