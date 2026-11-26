@@ -1,7 +1,15 @@
 {
-  "checked_at": "2026-11-25T20:13:28+00:00",
-  "updated": "2026-11-25T14:35:27+00:00",
+  "checked_at": "2026-11-26T02:28:07+00:00",
+  "updated": "2026-11-26T02:28:07+00:00",
   "items": [
+    {
+      "title": "Ekonomi Sirkular Masih Munculkan Ketidakadilan?",
+      "url": "https://mongabay.co.id/2026/11/26/ekonomi-sirkular-masih-munculkan-ketidakadilan/",
+      "date": "2026-11-26",
+      "source": "Mongabay Indonesia",
+      "source_id": "mongabay",
+      "via": "RSS penerbit"
+    },
     {
       "title": "Misteri Limbah Beracun di Hutan Wonosalam Jombang",
       "url": "https://mongabay.co.id/2026/11/25/misteri-limbah-beracun-di-hutan-wonosalam-jombang/",
@@ -3843,7 +3851,7 @@
       "via": "Google News RSS"
     },
     {
-      "title": "MAWAS - Borneo Orangutan Survival Foundation",
+      "title": "MAWAS - Borneo Orangutan Survival",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5SeldiVWtwcUtzM1JxeGN5QzRIT2pXQmRtcXB0X2U2TTd6RkhwQnIzN2xqcFU5N0tCTmt5bGFRSFN2Z056amxLeXR2M1QwMnFWYllv?oc=5",
       "date": "2022-03-23",
       "source": "Borneo Orangutan Survival Foundation (BOSF)",
@@ -3889,7 +3897,7 @@
       "name": "Mongabay Indonesia",
       "mode": "publisher_rss",
       "label": "RSS penerbit",
-      "count": 26
+      "count": 27
     },
     {
       "id": "greenpeace",
@@ -3901,8 +3909,8 @@
     {
       "id": "walhi",
       "name": "WALHI / Friends of the Earth Indonesia",
-      "mode": "unavailable",
-      "label": "Belum dapat diperbarui otomatis",
+      "mode": "google_news",
+      "label": "Google News RSS (pencarian situs)",
       "count": 111
     },
     {
@@ -3915,22 +3923,22 @@
     {
       "id": "kehati",
       "name": "Yayasan KEHATI",
-      "mode": "unavailable",
-      "label": "Belum dapat diperbarui otomatis",
+      "mode": "google_news",
+      "label": "Google News RSS (pencarian situs)",
       "count": 49
     },
     {
       "id": "ykan",
       "name": "Yayasan Konservasi Alam Nusantara (YKAN)",
-      "mode": "unavailable",
-      "label": "Belum dapat diperbarui otomatis",
+      "mode": "google_news",
+      "label": "Google News RSS (pencarian situs)",
       "count": 49
     },
     {
       "id": "wwf",
       "name": "WWF Indonesia",
-      "mode": "unavailable",
-      "label": "Belum dapat diperbarui otomatis",
+      "mode": "google_news",
+      "label": "Google News RSS (pencarian situs)",
       "count": 41
     },
     {
@@ -3943,8 +3951,8 @@
     {
       "id": "wcs",
       "name": "Wildlife Conservation Society (WCS) Indonesia",
-      "mode": "unavailable",
-      "label": "Belum dapat diperbarui otomatis",
+      "mode": "google_news",
+      "label": "Google News RSS (pencarian situs)",
       "count": 1
     },
     {
@@ -3964,8 +3972,8 @@
     {
       "id": "bosf",
       "name": "Borneo Orangutan Survival Foundation (BOSF)",
-      "mode": "unavailable",
-      "label": "Belum dapat diperbarui otomatis",
+      "mode": "google_news",
+      "label": "Google News RSS (pencarian situs)",
       "count": 28
     },
     {
