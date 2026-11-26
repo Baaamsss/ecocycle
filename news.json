@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-26T14:32:02+00:00",
-  "updated": "2026-11-26T14:32:02+00:00",
+  "checked_at": "2026-11-26T20:19:43+00:00",
+  "updated": "2026-11-26T20:19:43+00:00",
   "items": [
     {
       "title": "Ekonomi Sirkular Masih Munculkan Ketidakadilan?",
@@ -97,6 +97,14 @@
       "source": "Mongabay Indonesia",
       "source_id": "mongabay",
       "via": "RSS penerbit"
+    },
+    {
+      "title": "KUMPULAN CERITA PENYELAMATAN SAAT KARHUTLA #1 - Borneo Orangutan Survival",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZHp2OVl3VzFqVmRSaUlDTUl5aGU0SzNoakNmbTZJN2xiOGs4NnRuMkwycVNjWUJEeE5nOUVjbEY0bEVudmlrY3lvc0tDdFpENlNuQkwwbUhTVEFlZWJiRHVVaTBnUzh5Vk9qX0ZraEJkeDhoNW5KVENrMW15V3AyM25lNFNrVG9HMmlsVlNYcTJQLTRh?oc=5",
+      "date": "2026-11-25",
+      "source": "Borneo Orangutan Survival Foundation (BOSF)",
+      "source_id": "bosf",
+      "via": "Google News RSS"
     },
     {
       "title": "DLHK Babel Beri Penghargaan Bidang Lingkungan Hidup, Dorong Perhatian pada Perubahan Iklim - Yayasan Konservasi Alam Nusantara (YKAN)",
@@ -1563,7 +1571,7 @@
       "via": "Google News RSS"
     },
     {
-      "title": "Conservation Analyst - Yayasan Konservasi Alam Nusantara (YKAN)",
+      "title": "Conservation Analyst - Procurement YKAN",
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1VUUFHWG1pRjk3WEFLRE9RUlhJOWJwa25ueGRrdVpmOUgwaFV0R1dNNWFobE1GUDNQNEZXaFM5NnRJR1k3d3ZjX25aM2ludV9lb0dMMDg1cThRNnZ4Y1ZlYXpFcGpiS3RGTUZFbjJtcHhMc1hhTGRQRjh3?oc=5",
       "date": "2026-10-29",
       "source": "Yayasan Konservasi Alam Nusantara (YKAN)",
@@ -3939,7 +3947,7 @@
       "via": "Google News RSS"
     },
     {
-      "title": "PENGUMUMAN PERGANTIAN POSISI PROGRAM MANAJER NYARU MENTENG - Borneo Orangutan Survival Foundation",
+      "title": "PENGUMUMAN PERGANTIAN POSISI PROGRAM MANAJER NYARU MENTENG - Borneo Orangutan Survival",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNHRVV0FPSW8tY2dsRUw4ZWZLdEY1bHJFaVBHQ253SE52YXduX3NMUG9waldiUWRwZm1zYkxVMTdMWndOeU81T0VKc1ltbmEtRUNyS0swU0gwM2pWYVdIMXhGcWZvM2hrUFFkR3R6OUxRTk1BbjdhY0w3YTJOSmRFTU11bkY4QklLVHVybElnTEFxcXdU?oc=5",
       "date": "2024-04-30",
       "source": "Borneo Orangutan Survival Foundation (BOSF)",
@@ -3993,14 +4001,6 @@
       "source": "Greenpeace Indonesia",
       "source_id": "greenpeace",
       "via": "Google News RSS"
-    },
-    {
-      "title": "MENJADI PEMIMPIN - Borneo Orangutan Survival Foundation",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5NR0hJNXhVdmd3TWdwTnAzVC00RXlFVmlrbnRCLXp4NjFjcWpqSFFOTzBwQ1JnR01IcHhoWFZVNHoxN0hXaGF4amRjTHdMZmZ4TkNMZzBYWW5pR245Tnc?oc=5",
-      "date": "2022-08-31",
-      "source": "Borneo Orangutan Survival Foundation (BOSF)",
-      "source_id": "bosf",
-      "via": "Google News RSS"
     }
   ],
   "status": [
@@ -4021,8 +4021,8 @@
     {
       "id": "walhi",
       "name": "WALHI / Friends of the Earth Indonesia",
-      "mode": "unavailable",
-      "label": "Belum dapat diperbarui otomatis",
+      "mode": "google_news",
+      "label": "Google News RSS (pencarian situs)",
       "count": 121
     },
     {
@@ -4049,8 +4049,8 @@
     {
       "id": "wwf",
       "name": "WWF Indonesia",
-      "mode": "unavailable",
-      "label": "Belum dapat diperbarui otomatis",
+      "mode": "google_news",
+      "label": "Google News RSS (pencarian situs)",
       "count": 41
     },
     {
