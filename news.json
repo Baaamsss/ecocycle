@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-26T08:40:48+00:00",
-  "updated": "2026-11-26T08:40:48+00:00",
+  "checked_at": "2026-11-26T14:32:02+00:00",
+  "updated": "2026-11-26T14:32:02+00:00",
   "items": [
     {
       "title": "Ekonomi Sirkular Masih Munculkan Ketidakadilan?",
@@ -45,6 +45,14 @@
     {
       "title": "Ujung Ekor Ular Ini Dulu Dikira Tumor, Ternyata Umpan Berbentuk Laba-laba Palsu yang Seluruhnya Terbuat dari Sisik",
       "url": "https://mongabay.co.id/2026/11/26/ujung-ekor-ular-ini-dulu-dikira-tumor-ternyata-umpan-berbentuk-laba-laba-palsu-yang-seluruhnya-terbuat-dari-sisik/",
+      "date": "2026-11-26",
+      "source": "Mongabay Indonesia",
+      "source_id": "mongabay",
+      "via": "RSS penerbit"
+    },
+    {
+      "title": "Mengapa Asal-Usul Induk Kucing Hibrida Penting Bagi Perlindungan Kucing Kuwuk?",
+      "url": "https://mongabay.co.id/2026/11/26/mengapa-asal-usul-induk-kucing-hibrida-penting-bagi-perlindungan-kucing-kuwuk/",
       "date": "2026-11-26",
       "source": "Mongabay Indonesia",
       "source_id": "mongabay",
@@ -3993,14 +4001,6 @@
       "source": "Borneo Orangutan Survival Foundation (BOSF)",
       "source_id": "bosf",
       "via": "Google News RSS"
-    },
-    {
-      "title": "RAHASIA RAMBUT INDAH FANI - Borneo Orangutan Survival Foundation",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5IaUNvUlpUTzcyNnFQd2NFZnMwaGlPOU1VQ19jb1dBWUxwX0JHUDJpMlYzVFk4MGlwNC1aV2RRRy1UN3hMNVpJMkpGeHkyR0piUWV2cEpnMkV5RWZCQ3E3czFOb1ZWcXRhb3BCRWdVaTJEMjQ?oc=5",
-      "date": "2022-05-08",
-      "source": "Borneo Orangutan Survival Foundation (BOSF)",
-      "source_id": "bosf",
-      "via": "Google News RSS"
     }
   ],
   "status": [
@@ -4009,7 +4009,7 @@
       "name": "Mongabay Indonesia",
       "mode": "publisher_rss",
       "label": "RSS penerbit",
-      "count": 32
+      "count": 33
     },
     {
       "id": "greenpeace",
@@ -4021,8 +4021,8 @@
     {
       "id": "walhi",
       "name": "WALHI / Friends of the Earth Indonesia",
-      "mode": "google_news",
-      "label": "Google News RSS (pencarian situs)",
+      "mode": "unavailable",
+      "label": "Belum dapat diperbarui otomatis",
       "count": 121
     },
     {
@@ -4049,8 +4049,8 @@
     {
       "id": "wwf",
       "name": "WWF Indonesia",
-      "mode": "google_news",
-      "label": "Google News RSS (pencarian situs)",
+      "mode": "unavailable",
+      "label": "Belum dapat diperbarui otomatis",
       "count": 41
     },
     {
@@ -4086,7 +4086,7 @@
       "name": "Borneo Orangutan Survival Foundation (BOSF)",
       "mode": "google_news",
       "label": "Google News RSS (pencarian situs)",
-      "count": 26
+      "count": 25
     },
     {
       "id": "wetlands",
