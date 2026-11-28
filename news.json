@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-27T20:14:11+00:00",
-  "updated": "2026-11-27T20:14:11+00:00",
+  "checked_at": "2026-11-28T02:25:37+00:00",
+  "updated": "2026-11-28T02:25:37+00:00",
   "items": [
     {
       "title": "Recognition for Community-Led Climate Action - Yayasan Konservasi Alam Nusantara (YKAN)",
@@ -77,6 +77,14 @@
     {
       "title": "Opini: Satwa Tak Dilindungi, Bolehkah Diburu Tanpa Batas?",
       "url": "https://mongabay.co.id/2026/11/27/opini-satwa-tak-dilindungi-bolehkah-diburu-tanpa-batas/",
+      "date": "2026-11-27",
+      "source": "Mongabay Indonesia",
+      "source_id": "mongabay",
+      "via": "RSS penerbit"
+    },
+    {
+      "title": "Bahaya Bahan Kimia Makin Hantui Kesehatan Manusia dan Lingkungan",
+      "url": "https://mongabay.co.id/2026/11/27/bahaya-bahan-kimia-makin-hantui-kesehatan-manusia-dan-lingkungan/",
       "date": "2026-11-27",
       "source": "Mongabay Indonesia",
       "source_id": "mongabay",
@@ -1851,7 +1859,7 @@
       "via": "Google News RSS"
     },
     {
-      "title": "Yayasan Konservasi Alam Nusantara - Yayasan Konservasi Alam Nusantara (YKAN)",
+      "title": "Yayasan Konservasi Alam Nusantara - Procurement YKAN",
       "url": "https://news.google.com/rss/articles/CBMi6gJBVV95cUxOSFdnZzh1WnpXZzFFVlhfWGFVWlA2QklPYmU2dmFSYzI1dEg3MVpqUGt4NVhIcUswOXIwcUNuT1N3cTF1OGdBajRXTHV3RnJfMXdyb0xaQzd6SzRDZVNUVWdwT2lMWVRqcHVHeXBIenB0TTdhWS14TnhwM3dSZTBUZ04tRXBRUEl5RXl5Y185TWticHJMS2REcjllRVhuV0RHUDhsWlhDLWZiNFNxSmRGR2ZrNE84REUzaklTWjZxazN4U0d0OVY4bW81YzA3M2d5bTl3bkhGSEJEUW1UNTdpMVFBMTBfZjBMUWZJcmFjTUdqSUdrSk9oS09YbXRZSUxJYm9SRXdRRkhkN1EwMTJiMVNGS1p5Q1VaYjNSaXIwdjk0NUdtTFd6ODBSbDk1N3ZzcWdCcmVBNEZ1bkVjUG94Sko5QmxqYjMzSVhzbEZjUzJvNE93VndFY0lMLTV0SWNKT0tfRy1LaXpLdw?oc=5",
       "date": "2026-10-27",
       "source": "Yayasan Konservasi Alam Nusantara (YKAN)",
@@ -1877,6 +1885,14 @@
     {
       "title": "Cahaya Kecil yang Menjaga Mangrove Teluk Pambang - Yayasan Konservasi Alam Nusantara (YKAN)",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPOUVkclF6aE9tLURuckwxMjhsZ3VTbS1qdTZBRnExX1VsRXVlNlBwWWR4bGwxUWxjVVo3N2VnUll0UjdWenJZZWhnbWNDdnRicGVqSGp3Z2dDLWdhNkNfR0EwS3hiMk0xZDdWSXctc1U5VmJ6VUxyVHRVaC01Ml80dF9keXpuTldYcHRBOFZuOHRZU2J4ZkJ4dEtBSFhJV0JpdzVReUJwRQ?oc=5",
+      "date": "2026-10-27",
+      "source": "Yayasan Konservasi Alam Nusantara (YKAN)",
+      "source_id": "ykan",
+      "via": "Google News RSS"
+    },
+    {
+      "title": "Yayasan Konservasi Alam Nusantara - Procurement YKAN",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPd3RoTmhWdGx5Wnppa2xGTlVSeVZtYXVOZndhYUQwMnZsNGxieU5GdmhWUzJSMXN0RWZPQm9lN1JvcHNnbC1JU0JLOFA5bHdQZTVjS1JmcTVjbU5VMVdZSzVqelBBWElqcmJkaTZ0WjBSWG9TN3NNRlZjanJnS1c5a0NZV0ZidnFJd1NpWTRHWkpnTkVDLXZjVDZKMExXODFyY0c5Mk02Ynl1R1BDbW52VU5Cbko5aXc2UzRKU0l6RmlJUHlJR2ljU3pZVjBEUQ?oc=5",
       "date": "2026-10-27",
       "source": "Yayasan Konservasi Alam Nusantara (YKAN)",
       "source_id": "ykan",
@@ -3985,22 +4001,6 @@
       "source": "Conservation International (global)",
       "source_id": "ci",
       "via": "RSS penerbit"
-    },
-    {
-      "title": "Climate talks end — but what actually happened?",
-      "url": "https://www.conservation.org/news/climate-talks-end-but-what-actually-happened",
-      "date": "2025-11-24",
-      "source": "Conservation International (global)",
-      "source_id": "ci",
-      "via": "RSS penerbit"
-    },
-    {
-      "title": "UN report: Forests are friend, not foe, to farms",
-      "url": "https://www.conservation.org/news/un-report-forests-are-friend-not-foe-to-farms",
-      "date": "2025-11-20",
-      "source": "Conservation International (global)",
-      "source_id": "ci",
-      "via": "RSS penerbit"
     }
   ],
   "status": [
@@ -4009,7 +4009,7 @@
       "name": "Mongabay Indonesia",
       "mode": "publisher_rss",
       "label": "RSS penerbit",
-      "count": 40
+      "count": 41
     },
     {
       "id": "greenpeace",
@@ -4044,7 +4044,7 @@
       "name": "Yayasan Konservasi Alam Nusantara (YKAN)",
       "mode": "google_news",
       "label": "Google News RSS (pencarian situs)",
-      "count": 53
+      "count": 54
     },
     {
       "id": "wwf",
@@ -4107,7 +4107,7 @@
       "name": "Conservation International (global)",
       "mode": "publisher_rss",
       "label": "RSS penerbit",
-      "count": 69
+      "count": 67
     }
   ],
   "note": "Daftar judul dari RSS/indeks; pembaruan tergantung ketersediaan dan indeksasi sumber. Tidak selalu real-time."
